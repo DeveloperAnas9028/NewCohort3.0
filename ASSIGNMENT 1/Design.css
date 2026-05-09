@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(248 244 240);
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+}
+
+/* body{
+background-image: url(transparent-leaf-shadow-overlay-effect.avif);
+background-repeat: no-repeat;
+} */
+
+.leaf-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    mix-blend-mode: darken;
+}
+
+.navbar {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headinglogo {
+    font-size: 42px;
+    font-weight: 400;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(37 37 37);
+}
+
+.compo {
+    color: rgb(36 36 36);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.compoheading {
+    font-size: 17px;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.compoheading:hover {
+    cursor: pointer;
+    color: rgb(8, 8, 8);
+    border-bottom: 3px solid rgb(108, 112, 92);
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+label[for="shopicon"] img {
+    width: 30px;
+    height: 30px;
+}
+
+label[for="sidebar"] img {
+    width: 30px;
+    height: 30px;
+}
