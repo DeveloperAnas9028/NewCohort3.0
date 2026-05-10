@@ -52,7 +52,7 @@ background-repeat: no-repeat;
 .compoheading {
     font-size: 17px;
     font-weight: 300;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 4px;
     border-bottom: 3px solid transparent;
     transition: border-color 0.3s ease;
@@ -64,18 +64,306 @@ background-repeat: no-repeat;
     border-bottom: 3px solid rgb(108, 112, 92);
 }
 
+.active {
+    border-bottom: 3px solid rgb(108, 112, 92);
+    padding-bottom: 4px;
+}
+
 .logos {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
+/* With the help of Claude */
 label[for="shopicon"] img {
     width: 30px;
     height: 30px;
 }
 
+/* With the help of Claude */
 label[for="sidebar"] img {
     width: 30px;
     height: 30px;
+}
+
+.main {
+    width: 30%;
+    margin-left: 146px;
+    /* position: relative; */
+    /* background-color: black; */
+    /* height: 516px; */
+    /* top: 12%; */
+    padding-bottom: 100px;
+}
+
+.left-part {
+    /* background: #09d4d4;  */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.first-part {
+    /* position: absolute;
+    top: 0px; */
+}
+
+.first-part img {
+    width: 30px;
+    height: 30px;
+}
+
+.first-part .new-collection {
+    /* position: relative; */
+    /* display: inline; */
+    /* top: -10px;
+    left: 16px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: rgb(126 129 115);
+    margin-top: -28px;
+    margin-left: 48px;
+}
+
+.second-part {
+    /* position: absolute;
+    top: 50px; */
+}
+
+.big-heading {
+    font-size: 100px;
+    line-height: 0.9;
+    color: rgb(37 37 37);
+}
+
+
+.pt {
+    padding-top: 10px;
+}
+
+.seperating-line {
+    color: transparent;
+    border-bottom: 3px solid rgb(122 128 105);
+    width: 13%;
+    margin-left: 4px;
+    /* padding-top: 6px; */
+}
+
+.description {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    width: 294px;
+    line-height: 1.4;
+    color: rgb(122 128 105);
+}
+
+.color-capsule {
+    display: flex;
+    gap: 30px;
+    color: rgb(37 37 37);
+    padding-top: 40px;
+    padding-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.minute-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: -6px;
+    background-color: rgb(122 128 105);
+}
+
+.mc2 {
+    background-color: rgb(228 220 211);
+}
+
+.mc3 {
+    background-color: rgb(224 167 166);
+}
+
+.details {
+    padding-top: 36px;
+    color: rgb(37 37 37);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.details .actual-detail {
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    width: 294px;
+    line-height: 1.4;
+    color: rgb(122 128 105);
+}
+
+
+.features-badges {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+    /* text-align: center; */
+    width: 50%;
+}
+
+.seperating-line2 {
+    color: transparent;
+    border-bottom: 3px solid rgb(122 128 105);
+    width: 8%;
+    margin-left: 100px;
+    margin-top: -33px;
+}
+
+.seperating-line3 {
+    color: transparent;
+    border-right: 3px solid rgb(122 128 105);
+    width: 8%;
+    /* margin-left: 100px; */
+    margin-top: -33px;
+}
+
+.firstbadge {
+    margin: 0px 20px 0px 0px;
+}
+
+.secondbadge {
+    margin: 0px 40px 0px 56px;
+}
+
+.thirdbadge {
+    margin: 0px 0px 0px 40px;
+}
+
+.orgcot {
+    padding-top: 2px;
+    padding-left: 14px;
+    color: rgb(37 37 37);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.part-divider {
+    position: absolute;
+    top: 316px;
+    transform: rotate(270deg);
+    left: 596px;
+    font-size: 26px;
+}
+
+.line {
+
+    position: absolute;
+    top: 483px;
+    transform: rotate(270deg);
+    left: 640px;
+    width: 6%;
+    border-bottom: 3px solid #7a8069;
+}
+
+.right-part {
+    position: absolute;
+    top: 124px;
+    right: 300px;
+}
+
+.main-img img {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(248 244 240);
+    padding: 10px 20px 10px 20px;
+    border-radius: 16px;
+}
+
+.price-tag h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.ratings {
+    position: absolute;
+    top: 20px;
+    left: 352px;
+    background-color: rgb(248 244 240);
+    padding: 13px 16px 10px 16px;
+    border-radius: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.addtobag {
+    position: absolute;
+    top: 320px;
+    width: 170px;
+    left: 360px;
+    border-radius: 50%;
+    height: 170px;
+    background: rgb(95 101 78);
+    text-align: center;
+}
+
+.addtobag p {
+    transform: translate(0px, 54px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.addtobag img {
+    transform: translate(0px, 50px);
+    width: 40px;
+    height: 40px;
+}
+
+.img-gallery .first {
+    width:110px;
+    height:120px;
+    border-radius: 12px;
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    border: 3px solid rgb(95 101 78);
+    padding: 2px;
+}
+
+.img-gallery .second {
+    width:110px;
+    height:120px;
+    border-radius: 12px;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+
+}
+.img-gallery .third {
+    width:110px;
+    height:120px;
+    border-radius: 12px;
+    position: absolute;
+    top: 302px;
+    left: 550px;
+}
+
+.img-gallery .fourth {
+    width:110px;
+    height:120px;
+    border-radius: 12px;
+    position: absolute;
+    top: 456px;
+    left: 550px;
 }
