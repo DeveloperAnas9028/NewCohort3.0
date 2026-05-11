@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.989);
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 300px;
+    padding-top: 16px;
+}
+
+.nav-components {
+    display: flex;
+    gap: 40px;
+
+}
+
+.nav-components h6 {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 600; */
+    font-size: 18px;
+}
+
+.button input {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 16px 20px 16px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255 255 255 / 9%);
+    color: white;
+}
+
+
+.main {
+    padding-top: 80px;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: center;
+    /* font-family: "Geist", sans-serif; */
+    font-family: "Geist", "Geist Placeholder", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.categories .props {
+    background: rgb(255, 68, 0);
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    padding: 14px;
+    border-radius: 100px;
+    width: 70px;
+    text-align: center;
+
+}
+
+.categories .tech {
+    background: rgb(255 255 255 / 9%);
+    border-radius: 100px;
+    width: 84px;
+}
+
+.categories .saas {
+    background: rgb(255 255 255 / 9%);
+    border-radius: 100px;
+    width: 84px;
+}
+
+.categories .market {
+    background: rgb(255 255 255 / 9%);
+    border-radius: 100px;
+    width: 112px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 42px;
+    /* padding-left: 220px; */
+    padding-bottom: 60px;
+    font-family: "Geist", sans-serif;
+}
+
+.cards .first-card {
+    background: rgb(13, 13, 13);
+    width: 321px;
+    height: 470px;
+    border-radius: 30px;
+
+}
+
+.cards .first-card .img img {
+    width: 320px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cards .second-card {
+    background: rgb(13, 13, 13);
+    width: 321px;
+    height: 470px;
+    border-radius: 30px;
+
+}
+
+.cards .second-card .img img {
+    width: 320px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cards .third-card {
+    background: rgb(13, 13, 13);
+    width: 321px;
+    height: 470px;
+    border-radius: 30px;
+
+}
+
+.cards .third-card .img img {
+    width: 320px;
+    height: 264px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.cards .desc {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0px 0px 20px;
+    gap: 26px;
+}
+
+.cards .desc h4 {
+    font-family: "Geist", "Geist Placeholder", sans-serif;
+    font-size: 24px;
+}
+
+.cards .desc p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.cards .desc .capsule {
+    color: #ff5618;
+    text-align: center;
+    width: 60px;
+    background: rgba(255, 80, 16, 0.3);
+    padding: 8px;
+    border-radius: 18px;
+}
+
+.cards .desc .capsule3 {
+    color: #ff5618;
+    text-align: center;
+    width: 86px;
+    background: rgba(255, 80, 16, 0.3);
+    padding: 8px;
+    border-radius: 18px;
+}
