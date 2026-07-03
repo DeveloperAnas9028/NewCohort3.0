@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack Pro - Functional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="sidebar">
+            <div class="content">
+                <i class="ri-stack-fill"></i>
+                <div class="name">
+                    <h3>FinTrack Pro</h3>
+                    <p>Enterprise Finance</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="dashboard active">
+                    <i class="ri-dashboard-fill"></i>
+                    <h4>Dashboard</h4>
+                </div>
+                <div class="setting">
+                    <i class="ri-settings-4-fill"></i>
+                    <h4>Setting</h4>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="addtrans">
+                    <i class="ri-add-fill"></i> Add Transaction
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <nav>
+                <div></div>
+                <div class="logindet">
+                    <p>Username</p>
+                    <button class="logout">
+                        <i class="ri-logout-circle-r-line"></i> Logout
+                    </button>
+                </div>
+            </nav>
+
+            <section class="main-body">
+                <h2>Financial Overview</h2>
+                <p>Real-time tracking application</p>
+
+                <div class="data">
+
+                    <div class="balance">
+                        <div class="logo">
+                            <i class="ri-bank-fill"></i>
+                        </div>
+                        <div class="cur-balance">
+                            <p>Current Balance</p>
+                            <h3 id="bal">₹0.00</h3>
+                        </div>
+                    </div>
+
+                    <div class="income">
+                        <div class="logo">
+                            <i class="ri-corner-right-up-line"></i>
+                        </div>
+                        <div class="cur-income">
+                            <p>Total Income</p>
+                            <h3 id="income">₹0.00</h3>
+                        </div>
+                    </div>
+
+                    <div class="expense">
+                        <div class="logo">
+                            <i class="ri-corner-right-down-line"></i>
+                        </div>
+                        <div class="cur-expense">
+                            <p>Total Expenses</p>
+                            <h3 id="expense">₹0.00</h3>
+                        </div>
+                    </div>
+
+                    <div class="transactions">
+                        <div class="logo">
+                            <i class="ri-wallet-3-fill"></i>
+                        </div>
+                        <div class="cur-transactions">
+                            <p>Total Transactions</p>
+                            <h3 id="transaction">0</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mid-content">
+
+                    <div class="cash-flow">
+                        <h2>Cash Flow Analysis</h2>
+                        <canvas id="cashFlowChart" width="400" height="200"></canvas>
+                    </div>
+
+                    <div class="preference">
+                        <div class="upper">
+                            <h2>Preference</h2>
+                        </div>
+                        <div class="mid">
+                            <h4>Dark Mode</h4>
+                            <label class="theme-switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="lower">
+                            <button class="reset">Reset All Data</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bottom-content">
+                    <div class="header-toolbar">
+                        <h2>All Transactions</h2>
+                        <div class="filters-row">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search transactions...">
+                            </div>
+                            <select class="type-dropdown">
+                                <option value="all">All Types</option>
+                                <option value="income">Income Only</option>
+                                <option value="expense">Expense Only</option>
+                            </select>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="transactions-table">
+                                <thead>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>DESCRIPTION</th>
+                                        <th>CATEGORY</th>
+                                        <th>AMOUNT</th>
+                                        <th>ACTIONS</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tableBody">
+                                    <!-- <tr>
+                                        <td class="date-col">2026-06-29</td>
+                                        <td class="desc-col">Salary</td>
+                                        <td><span class="badge badge-salary">Salary</span></td>
+                                        <td class="amount-col income-amount">+$2000.00</td>
+                                        <td class="actions-col">
+                                            <button class="action-btn edit-btn"><i class="fa-solid fa-pen"></i></button>
+                                            <button class="action-btn delete-btn"><i
+                                                    class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="date-col">2026-06-29</td>
+                                        <td class="desc-col">Amazon</td>
+                                        <td><span class="badge badge-shopping">Shopping</span></td>
+                                        <td class="amount-col expense-amount">-$100.00</td>
+                                        <td class="actions-col">
+                                            <button class="action-btn edit-btn"><i class="fa-solid fa-pen"></i></button>
+                                            <button class="action-btn delete-btn"><i
+                                                    class="fa-solid fa-trash"></i></button>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="settings-view">
+                <div class="settings-header">
+                    <h2>Setting</h2>
+                    <p>Manage your account profile and app formatting.</p>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Profile Details</h3>
+
+                    <form id="profileForm" class="profile-form">
+                        <div class="profile-form-row">
+                            <div class="profile-form-group">
+                                <label for="profileFullName">Full Name</label>
+                                <input type="text" id="profileFullName" class="profile-input">
+                            </div>
+
+                            <div class="profile-form-group">
+                                <label for="primaryCurrency">Primary Currency</label>
+                                <select id="primaryCurrency" class="profile-input">
+                                    <option value="INR">INR (₹)</option>
+                                    <option value="USD">USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="save-changes-btn">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div class="modal-overlay" id="transactionModal">
+        <div class="modal-card">
+
+            <div class="modal-header">
+                <h2>Add Transaction</h2>
+                <button class="close-modal-btn" id="closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <form class="addTransac" id="transactionForm">
+
+                <div class="form-group">
+                    <label for="transType">Type</label>
+                    <select id="transType" class="form-input">
+                        <option value="expense">Expense</option>
+                        <option value="income">Income</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="transDesc">Description</label>
+                    <input type="text" id="transDesc" class="form-input" placeholder="e.g. Amazon, Salary, Coffee">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" class="form-input" placeholder="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" class="form-input">
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="salary">Salary</option>
+                        <option value="food-dining">Food & Dining</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="utilities">Utilities</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="save-transaction-btn">Save Transaction</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
